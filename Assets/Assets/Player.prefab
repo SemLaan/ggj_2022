@@ -163,7 +163,7 @@ MonoBehaviour:
   isAttacking: 0
   cooldownAttack: 0.3
   attackPos: {fileID: 7219372179517220880}
-  attackRange: 7.86
+  attackRange: 8.67
   Enemies:
     serializedVersion: 2
     m_Bits: 2147483648
@@ -227,7 +227,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 24.64
+  orthographic size: 75
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -275,7 +275,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7219372179517220881}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.53, y: -1, z: -1}
+  m_LocalPosition: {x: 9.9, y: -5.7, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7219372178453772559}

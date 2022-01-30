@@ -32,7 +32,21 @@ public class EnemyController : MonoBehaviour
             animator.SetBool("deuk", true);
             rb.constraints = RigidbodyConstraints2D.None;
         }
-        rb.AddRelativeForce(transform.forward * 100000);
+        Vector2 directionVector = transform.position - player.transform.position;
+        rb.AddRelativeForce(directionVector * 999999);
+
+        var r = Random.Range(1, 90);
+        if (IsLeft(transform.position, player.transform.position)) {
+            r = -r;
+        } 
+
+        var impulse = (r * Mathf.Deg2Rad) * rb.inertia;
+        rb.AddTorque(impulse, ForceMode2D.Impulse);
+    }
+
+    bool IsLeft(Vector2 A, Vector2 B)
+    {
+        return -A.x * B.y + A.y * B.x < 0;
     }
 
     // Update is called once per frame
