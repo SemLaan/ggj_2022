@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
                     Debug.Log(enemiesToDamage[i]);
-                    enemiesToDamage[i].GetComponent<EnemyController>().TakeDamage(Damage);
+                    enemiesToDamage[i].GetComponent<EnemyController>().TakeDamage(Damage, gameObject);
                     
                 }
             }

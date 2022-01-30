@@ -119,8 +119,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -2}
-  m_Size: {x: 11.13, y: 19.01}
+  m_Offset: {x: 1.0479603, y: -2}
+  m_Size: {x: 7.4114323, y: 19.01}
   m_Direction: 0
 --- !u!50 &7219372178453772558
 Rigidbody2D:
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 7219372178453772592}
-  jumpForce: 80000
+  jumpForce: 500000
   isGrounded: 0
   canFlip: 0
   speed: 30
