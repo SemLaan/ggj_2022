@@ -33,7 +33,7 @@ public class EnemyController : MonoBehaviour
             rb.constraints = RigidbodyConstraints2D.None;
         }
         Vector2 directionVector = transform.position - player.transform.position;
-        rb.AddRelativeForce(directionVector * 999999);
+        rb.AddRelativeForce(directionVector.normalized * 999999);
 
         var r = Random.Range(1, 90);
         if (IsLeft(transform.position, player.transform.position)) {
